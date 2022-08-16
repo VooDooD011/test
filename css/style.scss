@@ -1,0 +1,506 @@
+@import "null.css";
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+// ----------Шапка--------------------------------------------------------------------------------------------------------------------------
+.header {
+    margin: 24px 0 0 0;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {}
+    &__logo {
+        padding: 0 0 0 150px;
+    }
+
+    &__objects {
+        padding: 0 0 0 460px;
+    }
+}
+
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin: 0 0 0 38px;
+    }
+
+    &__item:first-child {
+        margin: 0;
+    }
+
+    &__link {
+        color: inherit;
+        line-height: 24px;
+    }
+}
+
+.objects {    
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin: 0 0 0 20px;
+    }
+
+    &__item:first-child {
+        margin: 0;
+    }
+}
+
+// ----------MAIN--------------------------------------------------------------------------------------------------------------------------
+
+.page {
+    flex: 1 1 auto;
+    padding: 56px 0 0 0;
+    &__container {
+        position: relative;
+                
+    }
+}
+
+
+
+.image-block-1 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 64px 0 0;
+    &__introduction {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 462px 0 0 0;
+        letter-spacing: 1.8px;
+        
+    }
+    &__subintroduction {
+        padding: 10px 0 0 0;
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    &__button {
+        margin: 25px 0 64px 0;
+        background-color: #56593D;
+        display: flex;
+        
+    }
+
+    &__button :hover {
+        background-color: blue;
+    }
+
+    &__button :active {
+        background: red;
+    }
+
+    &__button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1.575px;
+        color: #ffffff;
+        margin: 0 25px;
+        min-height: 56px;
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+
+
+.introduction {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 94px 0;
+    }
+
+    &__text {
+        max-width: 1194px;
+    }
+
+    &__text p {
+        font-size: 57px;
+        line-height: 81px;
+        text-align: center;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        min-width: 200px;
+    }
+}
+
+.links {
+    &__link {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #56593D;
+    }
+
+    &__link img {
+        padding: 0 0 0 4px;
+    }
+    
+    &__link a {
+        color: inherit;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    
+}
+
+
+
+
+
+
+.maple-boards {
+    // min-height: 738px;
+    &__container {
+        min-height: 738px;
+        background: #FFFFEF;
+    }
+}
+
+.boards {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 63px 0 80px 0;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -16px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 1 33%;
+        padding: 0 16px;
+    }
+}
+.column {
+    &__image {
+        flex: 0 1 auto;
+    }
+
+    &__image img {
+        width: 100%;
+    }
+
+    &__title {
+        padding: 15px 0 7px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__price {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 1.62px;
+    }
+}
+
+
+
+.essentials {
+    &__container {
+        height: 700px;
+        background: #FFFFEF;
+    }
+}
+
+.image-block-2 {
+    position: relative;
+    z-index: 2;
+    max-height: 700px;
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+        z-index: inherit;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 1.8px;
+        padding: 62px 0 11px 0;
+    }
+    &__text {
+        z-index: inherit;
+        font-size: 50px;
+        line-height: 60px;
+        max-width: 1093px;
+        text-align: center;
+    }
+    &__image {
+        position: absolute;
+        max-height: 700px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__image img {
+        width: 100%;
+    }
+}
+
+
+
+
+.block-1 {
+    // height: 746px;
+    margin: 24px 0 0 0;
+    &__comtainer {
+        height: 746px;
+        background: #FFFFEF;
+    }
+}
+
+.block-1-1 {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    padding: 64px 0 0 0;
+    &__img img {
+        width: 100%;
+    }
+
+    &__body {}
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 63px 0 0 120px;
+    }
+
+    &__title {
+        font-size: 29px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    &__underline {
+        padding: 32px 0;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        max-width: 347px;
+    }
+}
+
+.block-2 {
+    margin: 24px 0 0 0;
+    &__container{
+        height: 1014px;
+        background: #FFFFEF;
+    }
+}
+.block-2-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 0 1 auto;
+    padding: 64px 0 0 0;
+
+    &__img img {
+        width: 100%;
+    }
+    &__body {}
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 63px 120px 0 0;
+    }
+
+    &__title {
+        font-size: 29px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    &__underline {
+        padding: 32px 0;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        max-width: 347px;
+    }
+}
+
+
+
+.subscribe {
+    padding: 40px 0 0 0;
+    &__container {
+        background: #FFFFEF;
+    }
+}
+
+.newsletter {
+    &__column {
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 39px;
+        text-align: center;
+    }
+    
+    &__text {
+        padding: 16px 0 48px 0;
+        font-size: 17px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    
+    &__form {
+        display: flex;
+    }
+
+    &__email {
+        border-bottom: 1px solid #56593D;
+    }
+
+    &__email input {
+        background: #FFFFEF;
+        font-size: 15px;
+        width: 340px;
+    }
+
+    &__button {
+        padding: 0 0 0 16px;
+    }
+
+    &__button button {
+        background: #56593D;
+        text-decoration: none;
+        min-width: 144px;
+        color: #ffffff;
+        height: 25px;
+        text-align: center;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    &__button :hover {
+        background: blue;
+    }
+    &__button :active {
+        background: red;
+    }
+}
+
+
+
+.moments {
+    padding: 40px 0 0 0;
+    &__container {
+        background: #FFFFEF;
+    }
+}
+
+.moment {
+    display: flex;
+    height: 520px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        padding: 0 0 39px 0;
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+    &__imgs {}
+    &__row {
+        display: flex;
+        gap: 0 8px;
+        flex: 0 1 auto;
+    }
+    &__item img {
+        width: 100%;
+    }
+}
+
+
+// ----------Шапка--------------------------------------------------------------------------------------------------------------------------
+.footer {
+    text-align: center;
+}
+
+
+
+
+
+
+
